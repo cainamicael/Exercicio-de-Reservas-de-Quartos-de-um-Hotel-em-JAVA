@@ -12,20 +12,17 @@ public class App {
 
         int qtdAlunos = -1;
 
-
-        do{
-
-//Iniciando quartos vazios
+//Iniciando quartos vazios - O atributo validador diz se o quarto está ou não ocupado
         for (int i = 0; i < 10; i++){
 
-            reserva[i] = new  Quartos();
-            reserva[i] = null;
-
+            reserva[i] = new  Quartos(); 
+            reserva[i].setValidador(0);
+            
         }
 
 //Limitando até 10 alunos
         do{   
-           
+
         System.out.println("Digite a quantidade de alunos: ");
         qtdAlunos = sc.nextInt();
 
@@ -45,26 +42,24 @@ public class App {
             nome = sc.next();
             System.out.printf("%n%s, digite o seu Email:",nome);
             email = sc.next();
-            System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
+            System.out.printf("%n%s, Digite o número do quarto que você quer:",nome);
             quarto = sc.nextInt();
 
-<<<<<<< Updated upstream
-            while(quarto <= 0 || quarto > 10){
-=======
-            while((quarto <= 0 || quarto > 10) || (reserva[quarto] != null)){
->>>>>>> Stashed changes
+            while((quarto <= 0 || quarto > 10) || (reserva[quarto].getValidador() != 0)){
                 if (quarto <= 0 || quarto > 10){
                     System.out.println("ERRO. NUMERO ACIMA DE 10 OU MENOR QUE 0");
                     System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
                     quarto = sc.nextInt();
                 }else {
                     System.out.println("Este quarto já está reservado! Escolha outro!");
+                    quarto = sc.nextInt();
                 }
             } 
 
             reserva[quarto].setNome(nome);
             reserva[quarto].setEmail(email);
             reserva[quarto].setQuarto(quarto);
+            reserva[quarto].setValidador(1);
 
             System.out.printf("%nSucesso! Sua reserva foi feita no quarto %d",quarto);
 

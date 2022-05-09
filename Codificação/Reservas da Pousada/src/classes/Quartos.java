@@ -2,9 +2,10 @@ package classes;
 
 public class Quartos {
     
-    public String nome;
-    public String email;
-    public int quarto;
+    private String nome;
+    private String email;
+    private int quarto;
+    private int validador;
 
     
     public String getNome() {
@@ -25,5 +26,12 @@ public class Quartos {
     public void setQuarto(int quarto) {
         this.quarto = quarto;
     }
+    public int getValidador() {
+        return validador;
+    }
+    public void setValidador(int validador) {
+        this.validador = validador;
+    }
+    
 
 }
