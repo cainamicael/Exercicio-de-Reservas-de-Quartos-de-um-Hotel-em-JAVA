@@ -10,6 +10,12 @@ public class App {
 
         System.out.println("Pousada do Professor Gilson - Bem Vindo(a)!");
 
+        System.out.println("Digite a quantidade de alunos: ");
+        
+        int qtdAlunos = sc.nextInt();
+        
+        
+
 
         sc.close();
     }
