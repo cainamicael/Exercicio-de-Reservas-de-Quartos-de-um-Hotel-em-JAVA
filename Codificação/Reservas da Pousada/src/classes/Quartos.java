@@ -1,4 +1,4 @@
-package pousada;
+package classes;
 
 public class Quartos {
     public String nome;

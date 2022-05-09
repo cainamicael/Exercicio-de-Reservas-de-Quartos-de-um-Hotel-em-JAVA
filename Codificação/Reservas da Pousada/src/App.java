@@ -1,5 +1,6 @@
-import pousada.Quartos;
 import java.util.Scanner;
+
+import classes.Quartos;
 
 public class App {
     public static void main(String[] args) throws Exception {
