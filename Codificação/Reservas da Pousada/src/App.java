@@ -14,7 +14,6 @@ public class App {
 
         do{
            
-
         System.out.println("Digite a quantidade de alunos: ");
         qtdAlunos = sc.nextInt();
 
