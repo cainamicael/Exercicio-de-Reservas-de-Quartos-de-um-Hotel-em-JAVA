@@ -4,12 +4,7 @@ public class Quartos {
     public String nome;
     public String email;
     public int quarto;
-    
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> d54bbba0ebebe0d933a4f556be268831389b5179
     public String getNome() {
         return nome;
     }

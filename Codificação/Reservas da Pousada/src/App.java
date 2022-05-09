@@ -10,9 +10,20 @@ public class App {
     
         System.out.println("Pousada do Professor Gilson - Bem Vindo(a)!");
 
+        int qtdAlunos = -1;
+
+        do{
+           
+
         System.out.println("Digite a quantidade de alunos: ");
-        int qtdAlunos = sc.nextInt();
-        
+        qtdAlunos = sc.nextInt();
+
+        if(qtdAlunos <= 0 || qtdAlunos > 10){
+            System.out.println("ERRO!! ");
+        }
+
+    }while(qtdAlunos <= 0 || qtdAlunos > 10 );
+
         
 
 
