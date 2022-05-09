@@ -5,7 +5,6 @@ public class Quartos {
     public String email;
     public int quarto;
 
-    
     public String getNome() {
         return nome;
     }
@@ -24,7 +23,5 @@ public class Quartos {
     public void setQuarto(int quarto) {
         this.quarto = quarto;
     }
-
-    
 
 }
