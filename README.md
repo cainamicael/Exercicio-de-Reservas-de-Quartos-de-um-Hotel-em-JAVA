@@ -11,3 +11,7 @@ aluguel dos N estudantes. Para cada registro de aluguel, * informar O nome e ema
 qual dos quartos ele escolheu (de O a 9). Suponha que seja escolhido um quarto vago(Sem necessidade de
 verificar se O quarto está alugado). AO final, seu programa deve imprimir um relatório de todas ocupações do
 pensionato, por ordem de quarto, conforme exemplo.
+
+Nome
+Email
+Quarto
