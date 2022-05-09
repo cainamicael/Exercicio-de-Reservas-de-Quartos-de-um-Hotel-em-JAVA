@@ -32,6 +32,10 @@ public class Quartos {
     public void setValidador(int validador) {
         this.validador = validador;
     }
+
+    public void status(){
+        System.out.printf("%nNome: %s %nEmail: %s  %nQuarto: %d",this.nome,this.email,this.quarto);
+    }
     
 
 }

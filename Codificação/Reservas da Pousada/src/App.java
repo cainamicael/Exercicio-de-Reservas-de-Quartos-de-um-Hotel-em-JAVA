@@ -17,7 +17,7 @@ public class App {
 
             reserva[i] = new  Quartos(); 
             reserva[i].setValidador(0);
-            
+
         }
 
 //Limitando até 10 alunos
@@ -45,14 +45,16 @@ public class App {
             System.out.printf("%n%s, Digite o número do quarto que você quer:",nome);
             quarto = sc.nextInt();
 
-            while((quarto <= 0 || quarto > 10) || (reserva[quarto].getValidador() != 0)){
-                if (quarto <= 0 || quarto > 10){
+            while((quarto < 0 || quarto >=10) || (reserva[quarto].getValidador() != 0)){
+                if (quarto < 0 || quarto >=10){
                     System.out.println("ERRO. NUMERO ACIMA DE 10 OU MENOR QUE 0");
                     System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
                     quarto = sc.nextInt();
-                }else {
+                }else if(reserva[quarto].getValidador() != 0) {
                     System.out.println("Este quarto já está reservado! Escolha outro!");
                     quarto = sc.nextInt();
+                }else {
+                    break;
                 }
             } 
 
@@ -61,8 +63,17 @@ public class App {
             reserva[quarto].setQuarto(quarto);
             reserva[quarto].setValidador(1);
 
-            System.out.printf("%nSucesso! Sua reserva foi feita no quarto %d",quarto);
+            System.out.printf("%nSucesso! Sua reserva foi feita no quarto %d%n",quarto);
 
+        }
+
+        System.out.printf("%nRelatório de todas ocupações do pensionato%n");
+
+        for (int c = 0; c < 10; c++){
+            System.out.printf("%n");
+            if(reserva[c].getValidador() != 0){
+                reserva[c].status();
+            } 
         }
 
         sc.close();
