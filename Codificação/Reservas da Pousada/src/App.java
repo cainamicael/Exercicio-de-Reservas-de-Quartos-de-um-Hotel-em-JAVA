@@ -12,9 +12,9 @@ public class App {
 
         int qtdAlunos = -1;
 
-<<<<<<< HEAD
+
         do{
-=======
+
 //Iniciando quartos vazios
         for (int i = 0; i < 10; i++){
 
@@ -25,7 +25,6 @@ public class App {
 
 //Limitando até 10 alunos
         do{   
->>>>>>> fb853ea9faa9a9a3dd0f81bb8984de3412fe08a6
            
         System.out.println("Digite a quantidade de alunos: ");
         qtdAlunos = sc.nextInt();
@@ -49,7 +48,7 @@ public class App {
             System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
             quarto = sc.nextInt();
 
-            while((quarto <= 0 || quarto > 10) && (reserva[quarto] != null)){
+            while(quarto <= 0 || quarto > 10){
                 if (quarto <= 0 || quarto > 10){
                     System.out.println("ERRO. NUMERO ACIMA DE 10 OU MENOR QUE 0");
                     System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
