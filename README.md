@@ -15,3 +15,9 @@ pensionato, por ordem de quarto, conforme exemplo.
 Nome
 Email
 Quarto
+
+Trabalho feito por:
+Cainã Micael Silvestre Gomes da Silva, Matrícula: 202110178
+Pedro Henrique Maciel Pessoa, Matrícula: 202110869
+
+Alunos do 3º Período de Ciência da Computação, UniFG, Campus Boa Vista!
