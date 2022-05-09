@@ -48,7 +48,11 @@ public class App {
             System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
             quarto = sc.nextInt();
 
+<<<<<<< Updated upstream
             while(quarto <= 0 || quarto > 10){
+=======
+            while((quarto <= 0 || quarto > 10) || (reserva[quarto] != null)){
+>>>>>>> Stashed changes
                 if (quarto <= 0 || quarto > 10){
                     System.out.println("ERRO. NUMERO ACIMA DE 10 OU MENOR QUE 0");
                     System.out.printf("%n%sDigite o número do quarto que você quer:",nome);
